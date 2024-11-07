@@ -4,6 +4,9 @@ public class Employee {
     private String lastname;
     private String position;
     private String department;
+    private String passportNumber;
+
+    private String email;
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
     public String getLastname() { return lastname; }
@@ -15,4 +18,17 @@ public class Employee {
     public String getDepartment() { return department; }
     public void setDepartment(String department) { this.department =
             department; }
+
+    public String getPassportNumber() { return passportNumber; }
+
+    public void setPassportNumber(String passportNumber) {
+        this.passportNumber = passportNumber; }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }
