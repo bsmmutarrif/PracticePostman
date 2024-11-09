@@ -14,6 +14,7 @@ import static javax.management.Query.or;
 public class EmployeeController {
     private final File employeeFile = new File("employee.json");
     private final ObjectMapper mapper = new ObjectMapper();
+    private final int MINIMUM_AGE= 18;
 
     @GetMapping("/list")
     public List<Employee> getAllEmployees() {
@@ -45,6 +46,11 @@ public class EmployeeController {
                     return "Error: Duplicate passport number!";
                 }
             }
+
+            if (employee.getAge() < MINIMUM_AGE) {
+                return "Error: Employee must be at least " + MINIMUM_AGE + " years old.";
+            }
+
             employees.add(employee);
             mapper.writeValue(employeeFile, employees);
             return "Employee added successfully!";

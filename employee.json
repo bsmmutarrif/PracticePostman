@@ -1,1 +1,1 @@
-[{"name":"John","lastname":"Doe","position":"Developer","department":"BSW","passportNumber":"A1234567"}]
+[{"name":"John","lastname":"Doe","position":"Developer","department":"BSW","passportNumber":"A1575545","email":"john.doe@example.com","age":19},{"name":"John","lastname":"Doe","position":"Developer","department":"BSW","passportNumber":"A3575545","email":"john.doe@example.com","age":18},{"name":"John","lastname":"Doe","position":"Developer","department":"BSW","passportNumber":"A3595545","email":"john.doe@example.com","age":18}]
